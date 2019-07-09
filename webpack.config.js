@@ -1,5 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require("mini-html-webpack-plugin");
+
 const CleanBuild = require('./webpack-plugins/clean-build/clean-build')
 
 module.exports = {
@@ -33,6 +35,9 @@ module.exports = {
   plugins: [
     new CleanBuild({
       enable: true
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Webpack Example 🤪'
     })
   ],
 
