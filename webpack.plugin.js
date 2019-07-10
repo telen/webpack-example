@@ -1,0 +1,20 @@
+const path = require('path');
+const DemoPlugin = require('./webpack-plugins/DemoPlugin/index.js');
+
+const PATHS = {
+  lib: path.join(__dirname, 'app', 'shake.js'),
+  build: path.join(__dirname, 'build'),
+};
+
+module.exports = {
+  entry: {
+    lib: PATHS.lib,
+  },
+  output: {
+    path: PATHS.build,
+    filename: '[name].js',
+  },
+  plugins: [
+    new DemoPlugin({ title: 'Officer' })
+  ],
+}

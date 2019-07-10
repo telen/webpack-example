@@ -4,8 +4,10 @@
   "description": "webpack-example",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode development --devtool false"
+    "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --mode development\"",
+    "build": "webpack --mode development --devtool false",
+    "build:plugin": "nodemon --watch webpack.plugin.js --watch ./webpack-plugins --exec \"webpack --mode development --devtool false --config webpack.plugin.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "webpack"
@@ -16,12 +18,15 @@
     "@babel/core": "^7.5.0",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
+    "colors": "^1.3.3",
     "css-loader": "^3.0.0",
     "html-webpack-plugin": "^3.2.0",
-    "mini-html-webpack-plugin": "^1.0.0",
+    "nodemon": "^1.19.1",
     "style-loader": "^0.23.1",
     "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.5"
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-sources": "^1.3.0"
   },
   "dependencies": {
     "tapable": "^1.1.3"

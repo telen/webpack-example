@@ -81,41 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./app/shake.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/component.js":
-/*!**************************!*\
-  !*** ./src/component.js ***!
-  \**************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ((text = 'Hello Miku') => {
-  const element = document.createElement('div');
-  element.innerHTML = text;
-  return element;
-});
-
-/***/ }),
-
-/***/ "./src/index.js":
+/***/ "./app/shake.js":
 /*!**********************!*\
-  !*** ./src/index.js ***!
+  !*** ./app/shake.js ***!
   \**********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./component */ "./src/component.js");
-
-document.body.appendChild(Object(_component__WEBPACK_IMPORTED_MODULE_0__["default"])());
-console.log('Hello Jack');
+console.log("T_T")
 
 /***/ })
 
