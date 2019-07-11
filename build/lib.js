@@ -81,14 +81,14 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./app/shake.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./app/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./app/shake.js":
+/***/ "./app/index.js":
 /*!**********************!*\
-  !*** ./app/shake.js ***!
+  !*** ./app/index.js ***!
   \**********************/
 /*! no static exports found */
 /***/ (function(module, exports) {
