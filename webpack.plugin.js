@@ -16,6 +16,5 @@ module.exports = {
   },
   plugins: [
     new DemoPlugin({ title: 'Officer1' }),
-    new DemoPlugin({ title: 'Officer2' }),
   ],
 }
