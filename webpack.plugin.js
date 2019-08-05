@@ -1,5 +1,6 @@
 const path = require('path');
 const DemoPlugin = require('./webpack-plugins/DemoPlugin/index.js');
+const BarPlugin = require('./webpack-plugins/BarPlugin.js');
 
 const PATHS = {
   lib: path.join(__dirname, 'app', 'index.js'),
@@ -16,5 +17,6 @@ module.exports = {
   },
   plugins: [
     new DemoPlugin({ title: 'Officer1' }),
+    new BarPlugin()
   ],
 }
